@@ -1,5 +1,5 @@
 class Car:
-    EngineType = "Petrol Engine"
+    EngineType = "Diesel Engine"
     def __init__(self,name,mil,Color):
         print("This is a car class")
         self.name = name
