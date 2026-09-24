@@ -82,7 +82,8 @@ class CoffeeMachine():
 
     
 class MoneyMachine():
-     
+    def __init__(self):
+        self.profit = 0
     
     def make_payment(self,drink):
         print(f"Please pay : {drink.cost}")
@@ -95,8 +96,8 @@ class MoneyMachine():
             print('Payment Failed')
             return False
     def profit(self,drink):
-        profit = drink.cost+profit
-        return profit
+        self.profit += drink.cost
+        return self.profit
 
 menu = Menu()
 drink = menu.find_drink('Cappuccino')
